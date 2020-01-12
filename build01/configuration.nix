@@ -6,6 +6,7 @@
 
     ./buildkite.nix
     ./gitlab.nix
+    ./github-actions-nixpkgs-fmt.nix
 
     ../profiles/common.nix
     ../profiles/docker.nix
