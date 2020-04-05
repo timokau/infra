@@ -4,7 +4,9 @@ This documents and configures the infrastructure used for the `nix-community` Gi
 
 ## Usage
 
-`./deploy`
+* `./deploy` - NixOps deployment
+* ./terraform - Setup DNS
+* ./vpsfree - WIP: Build hosts on VPSFree
 
 ## Hosts
 
