@@ -14,6 +14,14 @@ let
       subPackages = [ "." ];
     };
 
+    vpsadmin-get-token = pkgs.buildGoModule {
+      pname = "vpsadmin-get-token";
+      version = "master";
+      src = "${pkgs.sources.terraform-provider-vpsadmin}/get-token";
+      modSha256 = "sha256-CfPmgWB2eiedFw9hIJ6hVnQSwGEzBJHSQsuIyRlPSxE=";
+      submPackages = [ "." ];
+    };
+
     terraform = pkgs.terraform.withPlugins (
       p: [
         p.cloudflare
