@@ -11,7 +11,8 @@ resource "vpsadmin_vps" "zimbatm" {
   location = "Praha"
 
   # OS template name, see vpsfreectl os_template list -o name
-  os_template = "nixos-19.09-x86_64-vpsfree"
+  #os_template = "nixos-19.09-x86_64-vpsfree"
+  os_template = "ubuntu-18.04-x86_64-vpsfree"
 
   # vpsAdmin-managed hostname
   hostname = "build-zimbatm"
@@ -26,9 +27,9 @@ resource "vpsadmin_vps" "zimbatm" {
   diskspace = 122880
 
   # Public keys deployed to /root/.ssh/authorized_keys
-  ssh_keys = [
-    vpsadmin_ssh_key.zimbatm.id,
-  ]
+  ssh_keys = [ "4138" ]
+    # vpsadmin_ssh_key.zimbatm.id,
+  # ]
 
   # Install nginx once created
   # provisioner "remote-exec" {
